@@ -122,6 +122,7 @@ body {
             border-radius: 3px;
             margin-bottom: var(--spacing);
             margin-right: calc(var(--spacing) * 2);
+
             &:invalid {
                 border-color: red;
             }
@@ -131,12 +132,28 @@ body {
                 border-width: 2px;
                 box-shadow: 2px 2px 7px 0px rgba(0,0,0,0.25);
             }
+            &::placeholder {
+                color: rgb(170, 170, 170);
+            }
         }
 
         label {
             text-transform: uppercase;
             font-size: smaller;
-            color: gray;
+            color: rgb(138, 138, 138);
+            font-weight: 600;
+        }
+
+        #password {
+            position: relative;
+        }
+
+        .nomatch::after {
+            content: "* Passwords do not match";
+            font-size: 12px;
+            color: red;
+            position: absolute;
+            bottom: -15px;
         }
     }
 
