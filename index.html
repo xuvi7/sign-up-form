@@ -15,34 +15,35 @@
         <div class="credits">image by Joel Filipe from Unsplash</div>
     </div>
     <div class="container">
-        <div class="text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</div>
-        <div class="text">You <em>know</em> you want to.</div>
+        <div class="margin text box bold">
+            <div>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</div>
+            <div>You <em>know</em> you want to.</div>
+        </div>
         <form action="">
             <fieldset>
-                <div>Let's do this!</div>
+                <div class="text bold">Let's do this!</div>
                 <div class="inputs">
                     <div>
                         <label for="first_name">First name</label>
-                        <input type="text" id="first_name">
-                    
+                        <input type="text" id="first_name" required>
                         <label for="email">Email</label>
-                        <input type="text" id="email">
+                        <input type="email" id="email" required>
                         <label for="password_1">Password</label>
-                        <input type="text" id="password_1">
+                        <input type="password" id="password_1" required>
                     </div>
                     <div>
                         <label for="last_name">Last name</label>
-                        <input type="text" id="last_name">
+                        <input type="text" id="last_name" required>
                         <label for="phone">Phone number</label>
-                        <input type="text" id="phone">
+                        <input type="tel" id="phone">
                         <label for="password_2">Confirm password</label>
-                        <input type="text" id="password_2">
+                        <input type="password" id="password_2" required>
                     </div>
                 </div>
             </fieldset>
-            <button>Create account</button>
+            <button class="bold">Create account</button>
         </form>
-        <div class="text">Already have an account? <a href="" class="login">Log in</a></div>
+        <div class="margin text">Already have an account? <a href="" class="login bold">Log in</a></div>
     </div>
 </body>
 </html>
